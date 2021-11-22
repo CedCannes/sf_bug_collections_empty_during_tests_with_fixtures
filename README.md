@@ -1,7 +1,7 @@
-#Abnormal behavior of relations during tests 
+# Abnormal behavior of relations during tests
 using liip/test-fixtures-bundle and hautelook/alice-bundle
 
-##Abnormal behavior:
+## Abnormal behavior:
 I have 2 entities Board and Lane that have a OneToMany relationship.
 Everything works normally with the entities loaded from the database.
 However, I had problems with my tests if I load the fixtures before, the collections are empty when they should contain data.
