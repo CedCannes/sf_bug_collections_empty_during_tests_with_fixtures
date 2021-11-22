@@ -1,0 +1,14 @@
+App\Entity\Lane:
+    
+    lane_1:
+        title: 'lane1'
+        board: '@main_board'
+    lane_2:
+        title: 'lane2'
+        board: '@main_board'
+    lane_3:
+        title: 'lane3'
+        board: '@main_board'
+    lane_4:
+        title: 'lane4'
+        board: '@main_board'
