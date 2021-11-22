@@ -22,8 +22,10 @@ class BugWithCollectionTest extends WebTestCase
             __DIR__.'/../fixtures/board.yml',
         ];
 
-        // uncomment the line below and the test passes
         $this->databaseTool->loadAliceFixture($files, false);
+
+        // uncomment the line below and the test passes
+//        static::getContainer()->get('doctrine')->getManager()->clear();
 
         // verify that the board is in the database and has the correct number of lanes
         $board = $this->getContainer()->get('doctrine')->getRepository(Board::class)->find(1);

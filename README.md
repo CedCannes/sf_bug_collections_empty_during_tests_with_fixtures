@@ -14,3 +14,10 @@ There is a Makefile, so to see the bug, you can do :
 ```make dev-up```
 
 ```make test```
+
+
+## Solution:
+Well I think it come from theofidry/AliceDataFixtures peristerloader.
+I have to add the following code after have loaded the fixtures and tests pass:
+```static::getContainer()->get('doctrine')->getManager()->clear();```
+
